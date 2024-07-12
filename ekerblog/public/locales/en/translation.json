@@ -1,6 +1,7 @@
 {
   "darkMode": "DARK MODE",
   "darkMode2": "LIGHT MODE",
-  "login": "Login",
-  "friends": "Friends"
+  "english": "TÜRKÇE",
+  "hi":"Hi!👋",
+  "aboutMe":"I’m Yunus. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!"
 }

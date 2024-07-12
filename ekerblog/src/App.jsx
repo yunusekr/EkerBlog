@@ -7,8 +7,6 @@ import Login from "./Login";
 import Blog from "./Blog";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Switch>

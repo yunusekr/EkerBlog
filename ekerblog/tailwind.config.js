@@ -6,6 +6,12 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      colors: {
+        customPink: "#E92577",
+      },
+      borderRadius: {
+        custom: "2rem",
+      },
     },
   },
   plugins: [],
