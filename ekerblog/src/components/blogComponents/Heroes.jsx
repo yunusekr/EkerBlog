@@ -9,6 +9,7 @@ function Heroes() {
   const { t } = useTranslation();
   const darkMode = useSelector((store) => store.darkMode);
   const language = useSelector((store) => store.language);
+
   const { i18n } = useTranslation();
   useEffect(() => {
     i18n.changeLanguage(localStorage.getItem("language"));

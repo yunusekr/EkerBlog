@@ -1,7 +1,8 @@
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 function Projectscontext(props) {
   const { item } = props;
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col">
       <div
@@ -28,21 +29,26 @@ function Projectscontext(props) {
             className="hover:cursor-pointer text-inherit no-underline"
             target="_blank"
           >
-            View On Github
+            {item.goGithub}
           </a>
           <a
             className="hover:cursor-pointer text-inherit no-underline"
+            href={item.link2}
             target="_blank"
           >
-            Go to App {"->"}
+            {item.goApp}
           </a>
         </div>
       </div>
       <img
+        className="w-[470px] h-[294.5px] absolute mt-[588px] ml-[6.1rem]"
+        src={item.picture}
+        alt=""
+      />
+      <img
         className="w-[666px] h-[382px] absolute mt-[568px]"
         src="./src/assets/laptop.png"
       />
-      <img src={item.picture} alt="" />
     </div>
   );
 }

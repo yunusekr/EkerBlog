@@ -33,7 +33,10 @@
             ],
             "link": "https://github.com/yunusekr/Pizza-Project",
             "picture": "https://i.hizliresim.com/nijcx93.png",
-            "bg":"#DDEEFE"
+            "link2": "https://pizza-project-lime.vercel.app/",
+            "bg":"#DDEEFE",
+            "goGithub":"View On Github",
+            "goApp":"Go to App ->"
           },
           {
             "name": "Netflix Clone",
@@ -47,9 +50,13 @@
                "cypress"
             ],
             "link": "https://github.com/yunusekr/Witflix-Project",
-            "picture": "https://example.com/project.jpg",
-            "bg":"#D9F6F1"
+            "picture": "https://resmim.net/cdn/2024/07/14/WClm0I.png",
+            "link2": "https://witflix-project.vercel.app/",
+            "bg":"#D9F6F1",
+            "goGithub":"View On Github",
+            "goApp":"Go to App ->"
           }
-    ]
+    ],
+    "footerCaption":"Let’s work together on your next product."
  
 }

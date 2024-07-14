@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Projectscontext from "./Projectscontext";
 import { useState } from "react";
 import { useEffect } from "react";
+import Footer from "./Footer";
 
 function Projects() {
   const { t } = useTranslation();
@@ -43,13 +44,16 @@ function Projects() {
   }, [i18n, t]);
 
   return (
-    <div className="h-[1759px] w-full bg-[#FFFFFF] flex flex-col items-center justify-center  ">
-      <h1 className="">{t("projects")}</h1>
-      <div className="w-[1418.67px] h-[1056px] flex gap-[5rem] justify-center items-center ">
-        {projects.map((item, index) => (
-          <Projectscontext key={index} item={item} />
-        ))}
+    <div className="h-[1759px] w-full bg-[#FFFFFF] flex flex-col items-center justify-center gap-36">
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="">{t("projects")}</h1>
+        <div className="w-[1418.67px] h-[1056px] flex gap-[5rem] justify-center items-center ">
+          {projects.map((item, index) => (
+            <Projectscontext key={index} item={item} />
+          ))}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
