@@ -9,3 +9,11 @@
 .font56 {
   font-size: 3.5rem;
 }
+
+.img-shadow {
+  box-shadow: -1.66625rem -1.66625rem 0px #e92577;
+}
+
+.box-shadow {
+  box-shadow: 0.8rem 0.8rem 0px #5252527c;
+}

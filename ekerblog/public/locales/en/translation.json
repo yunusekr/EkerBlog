@@ -3,5 +3,53 @@
   "darkMode2": "LIGHT MODE",
   "english": "TÜRKÇE",
   "hi":"Hi!👋",
-  "aboutMe":"I’m Yunus. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!"
+  "aboutMe":"I’m Yunus. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",
+  "skills": "Skills",
+  "profile":"Profile",
+   "basicInfo":"Basic Information",
+   "birthDay":"Date Of Birth",
+   "city":"City",
+   "education":"Education",
+   "role":"Preferred Role",
+   "birthDay2":"26.02.1994",
+    "city2":"İzmir",
+    "education2":"Egean Unv. Licance,2018",
+    "role2":"Frontend, UI",
+    "aboutMeCaption" : "About Me",
+    "aboutMeText1" : "Hello! I am Yunus, a graduate of Ege University with a degree in Computer Engineering, currently enrolled in a full-stack web development course. I am passionate about software development and strive to create user-friendly and impressive web applications by working with both frontend and backend technologies. ",
+    "aboutMeText2" :"I am dedicated to mastering modern web technologies like React and Node.js. I enjoy developing new projects and optimizing existing ones.",
+    "projects": "Projects",
+    "datas" : [
+        {
+            "name": "Pizza project",
+            "about":
+              "Bu proje, kullanıcıların pizza siparişi verebileceği bir web uygulamasıdır. Proje, kullanıcı dostu bir arayüz ve çeşitli özellikler sunarak pizza sipariş sürecini kolay ve hızlı hale getirmeyi amaçlamaktadır.",
+            "used": [
+               "react",
+               "reactsrap",
+               "router",
+               "axios",
+               "cypress"
+            ],
+            "link": "https://github.com/yunusekr/Pizza-Project",
+            "picture": "https://i.hizliresim.com/nijcx93.png",
+            "bg":"#DDEEFE"
+          },
+          {
+            "name": "Netflix Clone",
+            "about":
+              "Kurs esnasında front-end bilgisini pekiştirmek için yapılmış bir Netflix kopyası.",
+            "used": [
+               "react",
+               "reactsrap",
+               "router",
+               "axios",
+               "cypress"
+            ],
+            "link": "https://github.com/yunusekr/Witflix-Project",
+            "picture": "https://example.com/project.jpg",
+            "bg":"#D9F6F1"
+          }
+    ]
+ 
 }

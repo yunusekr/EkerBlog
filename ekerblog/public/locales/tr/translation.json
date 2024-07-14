@@ -1,9 +1,53 @@
 {
     "darkMode": "KARANLIK MOD",
-    "darkMode2": "AYDINLIK MOD",
-    "login": "Giriş Yap",
-    "friends": "Arkadaşlar",
+    "darkMode2": "AYDINLIK MOD",  
     "english": "ENGLISH",
     "hi":"Merhaba!👋",
-    "aboutMe":"Ben Yunus.Ben tam kapsamlı bir geliştiriciyim. Sağlam ve ölçeklenebilir ön uç ürünler üretebilirim. Tanışalim!"
+    "aboutMe":"Ben Yunus.Ben tam kapsamlı bir geliştiriciyim. Sağlam ve ölçeklenebilir ön uç ürünler üretebilirim. Tanışalim!",
+    "skills": "Yetenekler",
+    "profile":"Profil",
+    "basicInfo":"Temel Bilgiler",
+    "birthDay":"Doğum Tarihi",
+    "city":"İkamet Şehri",
+    "education":"Eğitim Durumu",
+    "role":"Tercih Ettiği Rol",
+    "birthDay2":"26.02.1994",
+    "city2":"İzmir",
+    "education2":"Ege Ünv. Bilişim Lisans,2018",
+    "role2":"Frontend, UI",
+    "aboutMeCaption" : "Hakkımda",   
+     "aboutMeText1" : "Merhaba! Ben Yunus, Ege Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum ve şu anda full-stack web development kursu alıyorum. Yazılım geliştirme konusunda tutkulu biriyim ve hem frontend hem de backend teknolojileriyle çalışmak istiyorum.",
+    "aboutMeText2":"React, Node.js, ve diğer modern web teknolojileri üzerinde uzmanlaşmak için yoğun bir şekilde çalışıyorum. Yeni projeler geliştirmek ve mevcut projeleri optimize etmekten büyük keyif alıyorum.",
+    "projects": "Projeler",
+    "datas" : [
+        {
+            "name": "Pizza projesi",
+            "about":
+              "Bu proje, kullanıcıların pizza siparişi verebileceği bir web uygulamasıdır. Proje, kullanıcı dostu bir arayüz ve çeşitli özellikler sunarak pizza sipariş sürecini kolay ve hızlı hale getirmeyi amaçlamaktadır.",
+            "used": [
+               "react",
+               "vercel",
+               "axios",
+               "router"
+            ],
+            "link": "https://github.com/yunusekr/Pizza-Project",
+            "picture": "https://i.hizliresim.com/nijcx93.png",
+            "bg":"#DDEEFE"
+          },
+          {
+            "name": "Netflix Project",
+            "about":
+              "Kurs esnasında front-end bilgisini pekiştirmek için yapılmış bir Netflix projesi.",
+            "used": [
+              "react",
+              "redux",
+              "axios",
+              "router",
+              "vercel"
+            ],
+            "link": "https://github.com/yunusekr/Witflix-Project",
+            "picture": "https://example.com/project.jpg",
+            "bg":"#D9F6F1"
+          }
+    ]
 }

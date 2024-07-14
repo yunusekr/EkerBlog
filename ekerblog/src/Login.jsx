@@ -21,7 +21,7 @@ function Login() {
     if (email) {
       toast.success("Başarılı giriş sayfaya yönlendiriliyorsunuz", {
         position: "top-right",
-        autoClose: 5000, // Otomatik kapanma süresi
+        autoClose: 2000, // Otomatik kapanma süresi
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
