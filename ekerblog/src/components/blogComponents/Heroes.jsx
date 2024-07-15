@@ -33,8 +33,12 @@ function Heroes() {
   };
   return (
     <>
-      <div className="h-[984px] w-[100%] flex flex-col justify-center items-center bg-[#F4F4F4]">
-        <div className="w-[9.25rem] h-[9.25rem] bg-[#D9D9D9] rounded-full z-[999] absolute top-0 mt-[-3.75rem] left-0 ml-[36.5rem]"></div>
+      <div className="h-[984px] w-[100%] flex flex-col justify-center items-center bg-[#F4F4F4] dark:bg-[#2A262B]">
+        <div
+          className={
+            "w-[9.25rem] h-[9.25rem] bg-[#D9D9D9] dark:bg-[#525252] rounded-full z-[999] absolute top-0 mt-[-3.75rem] left-0 ml-[36.5rem]"
+          }
+        ></div>
         <div className="flex justify-center items-center flex-wrap gap-[5rem] pt-[50px]  ">
           <div className="inline-flex items-center  ml-[60rem]">
             <label className="switch">
@@ -101,14 +105,7 @@ function Heroes() {
         </div>
         <div className="w-[180px] h-[78px] bg-[#EA2678] absolute rounded-l-full top-[710px] right-0 z-[9] "></div>
         <div className="w-[200px] h-[42px] bg-[#E92577] rounded-md absolute z-[1] top-[347px] left-[240px]"></div>
-        <div className="w-[100%]">
-          <div className="w-[161.33px] h-[161.33px] bg-[#D9D9D9] rounded-full ml-[70.3vw] z-[99] absolute flex items-center justify-center bottom-0 mb-[-110.665px]">
-            <div className="w-[105.33px] h-[105.33px]">
-              <div className="w-[105.33px] h-[52.665px] bg-[#F4F4F4] rounded-t-[52.665px]"></div>
-              <div className="w-[105.33px] h-[52.665px] bg-white rounded-b-[52.665px]"></div>
-            </div>
-          </div>
-        </div>
+        <div className="w-[161.33px] h-[161.33px] border-[1.5rem] border-[#D9D9D9] dark:border-[#525252] rounded-full ml-[51vw] z-[99] absolute flex items-center justify-center bottom-0 mb-[-110.665px]"></div>
       </div>
     </>
   );

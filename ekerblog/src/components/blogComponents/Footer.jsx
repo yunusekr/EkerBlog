@@ -10,21 +10,24 @@ function Footer() {
 
       <div className="w-[210px] h-[183px] flex flex-col text-[32px] font-medium font-inter">
         <a
-          className="text-inherit no-underline text-[#1769FF]"
+          className=" no-underline text-[#1769FF] dark:text-[#82BBFF]"
           href="https://github.com/yunusekr"
         >
           Github
         </a>
-        <a className="text-inherit no-underline " href="">
+        <a
+          className=" text-[#000000] dark:text-[#FFFFFF] no-underline "
+          href=""
+        >
           Personal Blog
         </a>
         <a
-          className="text-inherit no-underline text-[#0077B5]"
+          className=" no-underline text-[#0077B5] dark:text-[#419CCB]"
           href="https://www.linkedin.com/in/yunus-eker-a49208a5/"
         >
           Linkedin
         </a>
-        <a className="text-inherit no-underline text-[#AF0C48]" href="">
+        <a className=" no-underline text-[#AF0C48] dark:text-[#EA2678]" href="">
           Email
         </a>
       </div>

@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next";
 function Profile() {
   const { t } = useTranslation();
   return (
-    <div className="h-[656px] bg-[#F4F4F4] flex flex-col justify-center items-center gap-4 ">
+    <div className="h-[656px] bg-[#F4F4F4] dark:bg-[#2A262B] flex flex-col justify-center items-center gap-4 ">
       <h1 className="font-inter text-[48px] text-center">{t("profile")}</h1>
       <div className="flex items-center gap-[5rem]">
-        <div className="w-[42.33rem] h-[26.83rem] bg-[#FFFFFF] rounded-[1rem] pt-[2.5rem] pl-[2.5rem] flex flex-col gap-[1rem] box-shadow">
+        <div className="w-[42.33rem] h-[26.83rem] bg-[#FFFFFF] dark:bg-[#525252] rounded-[1rem] pt-[2.5rem] pl-[2.5rem] flex flex-col gap-[1rem] box-shadow">
           <p className=" text-[#EA2678] text-[32px] font-playfair ">
             {t("basicInfo")}
           </p>
@@ -30,7 +30,7 @@ function Profile() {
         {/*diğer div*/}
         <div className="absolute w-[120px] h-[24px] rounded-[6px] bg-[#82BBFF] -mt-[360px] ml-[740px] z-[1] "></div>
         <div className="w-[634.67px] z-[2] ">
-          <p className=" text-[#000000] text-[32px] font-playfair  ">
+          <p className=" text-[#000000] dark:text-[#FFFFFF] text-[32px] font-playfair  ">
             {t("aboutMeCaption")}
           </p>
           <div className="font-inter text-[24px] flex flex-col gap-3">

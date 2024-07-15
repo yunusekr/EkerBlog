@@ -1,12 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect } from "react";
 import "./App.css";
+import { useDispatch } from "react-redux";
 import { Switch, Route } from "react-router-dom";
 import Login from "./Login";
 import Blog from "./Blog";
+import { getSkills } from "./store/actions";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getSkills());
+  }, []);
   return (
     <>
       <Switch>

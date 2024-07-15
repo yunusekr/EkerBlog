@@ -34,6 +34,7 @@
             "picture": "https://i.hizliresim.com/nijcx93.png",
             "link2": "https://pizza-project-lime.vercel.app/",
             "bg":"#DDEEFE",
+            "bg2":"#2D3235",
             "goGithub":"Github'ı görüntüle",
             "goApp":"Uygulama aç"
           },
@@ -52,6 +53,7 @@
             "picture": "https://resmim.net/cdn/2024/07/14/WClm0I.png",
             "link2": "https://witflix-project.vercel.app/",
             "bg":"#D9F6F1",
+            "bg2":"#495351",
             "goGithub":"Github'ı görüntüle",
             "goApp":"Uygulama aç"
           }

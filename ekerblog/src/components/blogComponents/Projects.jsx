@@ -44,10 +44,10 @@ function Projects() {
   }, [i18n, t]);
 
   return (
-    <div className="h-[1759px] w-full bg-[#FFFFFF] flex flex-col items-center justify-center gap-36">
+    <div className="h-[1759px] w-full bg-[#FFFFFF] dark:bg-[#484148] flex flex-col items-center justify-center gap-36">
       <div className="flex flex-col justify-center items-center">
         <h1 className="">{t("projects")}</h1>
-        <div className="w-[1418.67px] h-[1056px] flex gap-[5rem] justify-center items-center ">
+        <div className="w-[1418.67px] h-[1056px] flex gap-[5rem] justify-center items-center">
           {projects.map((item, index) => (
             <Projectscontext key={index} item={item} />
           ))}

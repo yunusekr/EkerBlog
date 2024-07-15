@@ -23,7 +23,7 @@
         {
             "name": "Pizza project",
             "about":
-              "Bu proje, kullanıcıların pizza siparişi verebileceği bir web uygulamasıdır. Proje, kullanıcı dostu bir arayüz ve çeşitli özellikler sunarak pizza sipariş sürecini kolay ve hızlı hale getirmeyi amaçlamaktadır.",
+              "This project is a web application where users can order pizza. The project aims to make the pizza ordering process easy and fast by offering a user-friendly interface and various features.",
             "used": [
                "react",
                "reactsrap",
@@ -35,13 +35,14 @@
             "picture": "https://i.hizliresim.com/nijcx93.png",
             "link2": "https://pizza-project-lime.vercel.app/",
             "bg":"#DDEEFE",
+            "bg2":"#2D3235",
             "goGithub":"View On Github",
             "goApp":"Go to App ->"
           },
           {
             "name": "Netflix Clone",
             "about":
-              "Kurs esnasında front-end bilgisini pekiştirmek için yapılmış bir Netflix kopyası.",
+              "A copy of Netflix made to reinforce front-end knowledge during the course.",
             "used": [
                "react",
                "reactsrap",
@@ -53,6 +54,7 @@
             "picture": "https://resmim.net/cdn/2024/07/14/WClm0I.png",
             "link2": "https://witflix-project.vercel.app/",
             "bg":"#D9F6F1",
+            "bg2":"#495351",
             "goGithub":"View On Github",
             "goApp":"Go to App ->"
           }
