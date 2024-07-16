@@ -44,7 +44,7 @@ function Profile() {
 
       <img
         className="right-0 absolute mb-[590px] max-md:hidden"
-        src="./src/assets/Ellipse 12.png"
+        src="https://resmim.net/cdn/2024/07/16/WHmLvi.png"
         alt=""
       />
     </div>
