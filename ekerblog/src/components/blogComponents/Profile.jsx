@@ -20,7 +20,7 @@ function Profile() {
               <li className="mt-[36px]">{t("role")}</li>
             </ul>
 
-            <ul className="p-0 font-inter text-[24px]flex flex-col gap-3 w-[275px] h-[232px]">
+            <ul className="p-0 font-inter text-[24px] flex flex-col gap-3 w-[275px] h-[232px]">
               <li>{t("birthDay2")}</li>
               <li>{t("city2")}</li>
               <li>{t("education2")}</li>
