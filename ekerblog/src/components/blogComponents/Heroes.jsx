@@ -96,7 +96,7 @@ function Heroes() {
           </div>
           <img
             className="rounded-[2.5rem] w-[23.68vw] h-[23.68vw] z-[2] mb-[140px] img-shadow max-md:absolute max-md:mt-[-22rem]  max-md:w-[60vw] max-md:h-[60vw]"
-            src="./src/assets/Yunus Eker-CVFOTO (1).jpg"
+            src="https://resmim.net/cdn/2024/07/16/WHmOpZ.jpg"
             alt=""
           />
         </div>
