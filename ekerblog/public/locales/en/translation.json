@@ -59,6 +59,8 @@
             "goApp":"Go to App ->"
           }
     ],
-    "footerCaption":"Let’s work together on your next product."
+    "footerCaption":"Let’s work together on your next product.",
+    "hello": "Hi",
+    "toastifyMessage":" welcome to my site that introduces me!"
  
 }

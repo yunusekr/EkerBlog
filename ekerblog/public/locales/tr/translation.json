@@ -58,5 +58,7 @@
             "goApp":"Uygulama aç"
           }
     ],
-    "footerCaption":"Bir sonraki projende birlikte çalışalım"
+    "footerCaption":"Bir sonraki projende birlikte çalışalım",
+    "hello": "Merhaba",
+    "toastifyMessage":" beni tanıtan siteme hoşgeldin!"
 }
