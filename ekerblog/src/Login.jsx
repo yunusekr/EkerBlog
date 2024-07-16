@@ -1,92 +1,102 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Form, FormGroup, Label, Button } from "reactstrap";
-import { emails } from "./emails";
 import { useHistory } from "react-router-dom";
-import { ToastContainer, toast, Bounce } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { format } from "date-fns";
+import { tr } from "date-fns/locale";
 function Login() {
   let history = useHistory();
-  const [message, setMessage] = useState("");
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => {
-    const email = emails.find(
-      (item) => item.Email === data.Email && item.Password === data.Password
-    );
+  const { register, handleSubmit, setValue } = useForm();
+  const [currentDate, setCurrentDate] = useState(new Date());
 
-    if (email) {
-      toast.success("Başarılı giriş sayfaya yönlendiriliyorsunuz", {
-        position: "top-right",
-        autoClose: 2000, // Otomatik kapanma süresi
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-        onClose: () => history.push("/blog"),
-      });
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
 
-      setMessage("");
-    } else {
-      setMessage("Yanlış Email veya Şifre");
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const formattedDate = format(currentDate, "Ppp", { locale: tr });
+
+  useEffect(() => {
+    const storedName = localStorage.getItem("name");
+    if (storedName) {
+      setValue("Name", storedName);
     }
+  }, [setValue]);
+
+  const onSubmit = (data) => {
+    localStorage.setItem("name", data.Name);
+    history.push("/blog");
+  };
+
+  const changeHandler = (e) => {
+    setValue("Name", e.target.value);
   };
 
   return (
-    <fieldset className="w-screen h-screen bg-blue-500 flex justify-center items-center ">
-      <Form
+    <>
+      <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col items-center justify-center border-1 border-red-500 rounded-md w-80 h-80"
+        className="w-[100%] h-[100%] flex items-center justify-center flex-col"
       >
-        <div>
-          <FormGroup className="flex flex-col">
-            <Label for="Email">Email</Label>
-            <input
-              id="Email"
-              placeholder="Email giriniz"
-              type="email"
-              {...register("Email", {
-                required: "Email zorunludur",
-                pattern: {
-                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "Geçerli bir email adresi giriniz",
-                },
-              })}
-              className={`form-control ${errors.Email ? "is-invalid" : ""}`}
-            ></input>
-            {errors.Email && (
-              <span className="text-red-500">{errors.Email.message}</span>
-            )}
-          </FormGroup>
+        <div className="border-2 h-[30px] w-[200px] flex justify-center rounded-md bg-white/30  mt-[1rem]">
+          <p className="font-inter">{formattedDate}</p>
         </div>
-        <div>
-          <FormGroup className="flex flex-col">
-            <Label for="Password">Şifre</Label>
-            <input
-              id="Password"
-              placeholder="Şifre giriniz"
-              type="password"
-              {...register("Password", {
-                required: "Şifre zorunludur",
-              })}
-              className={`form-control ${errors.Password ? "is-invalid" : ""}`}
-            ></input>
-            {errors.Password && (
-              <span className="text-red-500">{errors.Password.message}</span>
-            )}
-          </FormGroup>
-          <p className="text-red-500">{message}</p>
-          <Button type="submit">Giriş</Button>
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage:
+              'url("https://i.pinimg.com/736x/9f/24/15/9f2415b868c03bef544400ebd3e632fb.jpg")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(3px)",
+            zIndex: -1,
+          }}
+        ></div>
+        <div
+          className="w-full h-full flex items-center justify-center"
+          style={{ position: "relative", zIndex: 1 }}
+        >
+          <div className="border-2 h-[200px] w-[300px] flex flex-col justify-center items-center gap-4 rounded-[1rem] bg-white/20">
+            <div className="form__group field">
+              <input
+                onChange={changeHandler}
+                type="text"
+                className="form__field font-inter"
+                placeholder="İsminizi öğrenebilir miyim?"
+                {...register("Name")}
+              />
+              <label htmlFor="name" className="form__label font-inter">
+                İsminiz
+              </label>
+            </div>
+            <button className="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+              <span className="text font-inter">G İ R İ Ş</span>
+              <span className="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </button>
+          </div>
         </div>
-      </Form>
-      <ToastContainer />
-    </fieldset>
+      </form>
+    </>
   );
 }
 

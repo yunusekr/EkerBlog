@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+html,
+#root {
+  height: 100%;
+}
+
 .font40 {
   font-size: 2.5rem;
 }
@@ -16,4 +22,10 @@
 
 .box-shadow {
   box-shadow: 0.8rem 0.8rem 0px #5252527c;
+}
+
+@media (max-width: 768px) {
+  .img-shadow {
+    box-shadow: -1rem -1rem 0px #e92577;
+  }
 }

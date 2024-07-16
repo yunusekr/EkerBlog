@@ -1,5 +1,4 @@
 export const DARK_MODE_CHANGE = "DARK_MODE_CHANGE";
-export const lANGUAGE_CHANGE = "lANGUAGE_CHANGE";
 export const GET_SKILLS = "GET_SKILLS";
 
 import axios from "axios";
@@ -14,10 +13,6 @@ export const getSkills = () => (dispatch) => {
 
 export const darkModeChange = (lclstr) => {
   return { type: DARK_MODE_CHANGE, payload: lclstr };
-};
-
-export const languageChange = (lclstrlng) => {
-  return { type: lANGUAGE_CHANGE, payload: lclstrlng };
 };
 
 /*

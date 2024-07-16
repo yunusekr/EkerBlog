@@ -5,7 +5,7 @@ function Projectscontext(props) {
   const { item } = props;
   const { t } = useTranslation();
   const darkMode = useSelector((store) => store.darkMode);
-  console.log(item.bg);
+
   return (
     <div className="flex flex-col">
       <div
@@ -42,16 +42,16 @@ function Projectscontext(props) {
             {item.goApp}
           </a>
         </div>
+        <img
+          className="w-[470px] h-[294.5px] absolute mt-[535px] ml-[2.8rem]"
+          src={item.picture}
+          alt=""
+        />
+        <img
+          className="w-[666px] h-[382px] absolute mt-[514px] ml-[-3.3rem] "
+          src="./src/assets/laptop.png"
+        />
       </div>
-      <img
-        className="w-[470px] h-[294.5px] absolute mt-[588px] ml-[6.1rem]"
-        src={item.picture}
-        alt=""
-      />
-      <img
-        className="w-[666px] h-[382px] absolute mt-[568px]"
-        src="./src/assets/laptop.png"
-      />
     </div>
   );
 }

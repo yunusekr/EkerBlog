@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next";
 function Footer() {
   const { t } = useTranslation();
   return (
-    <div className="w-[1010px] h-[183px] flex justify-center items-center gap-[5.3125rem]">
-      <p className="text-right w-[700px] h-[168px] text-[56px] font-medium font-inter z-[2]">
+    <div className="w-[1010px] h-[183px] flex justify-center items-center gap-[5.3125rem] max-md:mb-[10rem] max-md:scale-[0.5]  max-md:gap-[1rem] max-md:w-[800px] max-md:flex max-md:flex-col ">
+      <p className="text-right w-[700px] h-[168px] text-[56px] font-medium font-inter z-[2] max-md:text-center ">
         {t("footerCaption")}
       </p>
 
-      <div className="w-[210px] h-[183px] flex flex-col text-[32px] font-medium font-inter">
+      <div className="w-[210px] h-[183px] flex flex-col text-[32px] font-medium font-inter max-md:w-[300px] max-md:text-center ">
         <a
           className=" no-underline text-[#1769FF] dark:text-[#82BBFF]"
           href="https://github.com/yunusekr"
@@ -31,7 +31,7 @@ function Footer() {
           Email
         </a>
       </div>
-      <div className="absolute bg-[#82BBFF] w-[366px] h-[24px] mb-12 mr-[97px] rounded-md z-[1] "></div>
+      <div className="absolute bg-[#82BBFF] w-[366px] h-[24px] mb-12 mr-[97px] rounded-md z-[1] max-md:hidden "></div>
     </div>
   );
 }

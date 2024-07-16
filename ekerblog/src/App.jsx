@@ -1,26 +1,35 @@
 import { useEffect } from "react";
 import "./App.css";
+import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Login from "./Login";
 import Blog from "./Blog";
 import { getSkills } from "./store/actions";
 
 function App() {
+  const { i18n } = useTranslation();
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getSkills());
+    if (localStorage.getItem("i18nextLng") === "tr-TR") {
+      i18n.changeLanguage("en");
+    }
   }, []);
+
   return (
     <>
-      <Switch>
-        <Route exact path="/">
-          <Login />
-        </Route>
-        <Route path="/blog">
-          <Blog />
-        </Route>
-      </Switch>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Login />
+          </Route>
+
+          <Route path="/blog">
+            <Blog />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }
