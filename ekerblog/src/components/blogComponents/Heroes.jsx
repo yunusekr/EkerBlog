@@ -102,7 +102,7 @@ function Heroes() {
         </div>
         <div className="w-[180px] h-[78px] bg-[#EA2678] absolute rounded-l-full top-[750px] right-0 z-[9] max-md:hidden "></div>
         <div className="w-[200px] h-[42px] bg-[#E92577] rounded-md absolute z-[1] top-[355px] left-[250px] max-md:hidden"></div>
-        <div className="w-[161.33px] h-[161.33px] border-[1.5rem] border-[#D9D9D9] dark:border-[#525252] rounded-full ml-[47vw] z-[99] absolute flex items-center justify-center bottom-0 mb-[-105px] max-md:hidden"></div>
+        <div className="w-[161.33px] h-[161.33px] border-[1.5rem] border-[#D9D9D9] dark:border-[#525252] rounded-full ml-[50vw] z-[99] absolute flex items-center justify-center bottom-0 mb-[-105px] max-md:hidden"></div>
       </div>
     </>
   );
