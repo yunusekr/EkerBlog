@@ -49,7 +49,7 @@ function Projectscontext(props) {
         />
         <img
           className="w-[666px] h-[382px] absolute mt-[514px] ml-[-3.3rem] "
-          src="./src/assets/laptop.png"
+          src="https://resmim.net/cdn/2024/07/16/WHmoc7.png"
         />
       </div>
     </div>
