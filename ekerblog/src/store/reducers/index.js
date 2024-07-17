@@ -14,6 +14,10 @@ export const reducer = (state = initialState, action) => {
       return { ...state, darkMode: action.payload };
     case GET_SKILLS:
       return { ...state, skills: action.payload };
+    /*
+    case POST_SKILLS:
+      return console.log(action.payload);
+      */
     default:
       return state;
   }

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
 import { useTranslation } from "react-i18next";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Login from "./Login";
 import Blog from "./Blog";
@@ -9,8 +9,11 @@ import { getSkills, readFromStorage } from "./store/actions";
 
 function App() {
   const { i18n } = useTranslation();
-
+  /*
+  const skills = useSelector((store) => store.skills);
+  */
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getSkills());
     if (readFromStorage("i18nextLng") === "tr-TR") {
