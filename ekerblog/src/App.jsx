@@ -9,9 +9,6 @@ import { getSkills, readFromStorage } from "./store/actions";
 
 function App() {
   const { i18n } = useTranslation();
-  /*
-  const skills = useSelector((store) => store.skills);
-  */
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -28,7 +25,6 @@ function App() {
           <Route exact path="/">
             <Login />
           </Route>
-
           <Route path="/blog">
             <Blog />
           </Route>

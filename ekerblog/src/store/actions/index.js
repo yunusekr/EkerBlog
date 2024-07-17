@@ -1,8 +1,6 @@
 export const DARK_MODE_CHANGE = "DARK_MODE_CHANGE";
 export const GET_SKILLS = "GET_SKILLS";
-/*
-export const POST_SKILLS = "POST_SKILLS";
-*/
+
 import axios from "axios";
 
 export const getSkills = () => (dispatch) => {
@@ -13,13 +11,6 @@ export const getSkills = () => (dispatch) => {
     });
 };
 
-/*
-export const postSkills = (skillsData) => (dispatch) => {
-  axios.post("https://reqres.in/api/workintech", skillsData).then((res) => {
-    dispatch({ type: POST_SKILLS, payload: res.data });
-  });
-};
-*/
 export const darkModeChange = (lclstr) => {
   return { type: DARK_MODE_CHANGE, payload: lclstr };
 };
