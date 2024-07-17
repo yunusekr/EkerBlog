@@ -11,7 +11,7 @@ function Skills() {
       <h1 className="font-inter text-[64px] text-center max-md:text-[40px]">
         {t("skills")}
       </h1>
-      <div className="flex gap-[2.5rem] flex-wrap max-md:flex max-md:justify-center">
+      <div className="flex gap-[2.5rem] flex-wrap max-md:flex max-md:justify-center max-md:mr-[1.5rem]">
         {skills.map((item, index) => (
           <Skillscontext key={index} item={item} index={index} />
         ))}

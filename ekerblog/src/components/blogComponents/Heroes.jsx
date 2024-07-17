@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
-import { darkModeChange } from "../../store/actions";
+import { darkModeChange, writeToStorage } from "../../store/actions";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 function Heroes() {
@@ -22,7 +22,7 @@ function Heroes() {
   const changeHandler = () => {
     const newDarkMode = !darkMode;
     dispatch(darkModeChange(newDarkMode));
-    localStorage.setItem("darkMode", JSON.stringify(newDarkMode));
+    writeToStorage("darkMode", newDarkMode);
   };
   return (
     <>

@@ -15,10 +15,10 @@ export const darkModeChange = (lclstr) => {
   return { type: DARK_MODE_CHANGE, payload: lclstr };
 };
 
-/*
-export const ilkVerileriAl = () => (dispatch) => {
-  axios.get("https://reqres.in/api/users?page=1").then((res) => {
-    dispatch({ type: VERILER_AL, payload: res.data.data });
-  });
+export const writeToStorage = (key, value) => {
+  localStorage.setItem(key, JSON.stringify(value));
 };
-*/
+
+export const readFromStorage = (key) => {
+  return localStorage.getItem(key);
+};

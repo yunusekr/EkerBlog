@@ -5,14 +5,15 @@ import { useDispatch } from "react-redux";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Login from "./Login";
 import Blog from "./Blog";
-import { getSkills } from "./store/actions";
+import { getSkills, readFromStorage } from "./store/actions";
 
 function App() {
   const { i18n } = useTranslation();
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getSkills());
-    if (localStorage.getItem("i18nextLng") === "tr-TR") {
+    if (readFromStorage("i18nextLng") === "tr-TR") {
       i18n.changeLanguage("en");
     }
   }, []);
