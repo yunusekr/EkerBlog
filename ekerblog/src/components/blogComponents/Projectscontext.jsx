@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
+import laptop from "../../../src/assets/laptop.png";
 function Projectscontext(props) {
   const { item } = props;
   const { t } = useTranslation();
@@ -49,7 +50,7 @@ function Projectscontext(props) {
         />
         <img
           className="w-[666px] h-[382px] absolute mt-[514px] ml-[-3.3rem] "
-          src="https://resmim.net/cdn/2024/07/16/WHmoc7.png"
+          src={laptop}
         />
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import laptop from "../../../src/assets/Ellipse 12.png";
 function Profile() {
   const { t } = useTranslation();
   return (
@@ -44,7 +45,7 @@ function Profile() {
 
       <img
         className="right-0 absolute mb-[590px] max-md:hidden"
-        src="https://resmim.net/cdn/2024/07/16/WHmLvi.png"
+        src={laptop}
         alt=""
       />
     </div>

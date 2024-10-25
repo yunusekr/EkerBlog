@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { darkModeChange, writeToStorage } from "../../store/actions";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import cvfoto from "../../../src/assets/Yunus Eker-CVFOTO (1).jpg";
 function Heroes() {
   const dispatch = useDispatch();
   const { t } = useTranslation();
@@ -96,7 +97,7 @@ function Heroes() {
           </div>
           <img
             className="rounded-[2.5rem] w-[23.68vw] h-[23.68vw] z-[2] mb-[140px] img-shadow max-md:absolute max-md:mt-[-22rem]  max-md:w-[60vw] max-md:h-[60vw]"
-            src="https://resmim.net/cdn/2024/07/16/WHmOpZ.jpg"
+            src={cvfoto}
             alt=""
           />
         </div>
